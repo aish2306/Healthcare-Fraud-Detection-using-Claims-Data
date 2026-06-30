@@ -1,12 +1,11 @@
 # Multi-Agent Healthcare Fraud Detection
 
-A proof-of-concept implementing a five-stage payment-integrity pipeline: a Bayesian
+A proof-of-concept implementing a five-stage fraud-detection pipeline: a Bayesian
 prior-routing orchestrator, deterministic coding checks, **temporal GraphRAG**
 medical-necessity verification, unsupervised peer-baseline anomaly profiling, and
 budget-constrained adjudication with a human-in-the-loop safeguard. Orchestrated as a
 **LangGraph** state graph.
 
-Built for the Cotiviti agentic-AI internship assessment.
 
 ---
 
@@ -28,7 +27,6 @@ Orchestration: **LangGraph** state graph with a conditional DEEP/FAST edge (`run
 pip install -r requirements.txt
 python -m data.generate_data        # writes synthetic stand-ins into data/synth/
 
-# tested pipeline (runs on numpy/pandas/sklearn/networkx)
 python run_pipeline.py                       # batch summary + ROI-ranked queue
 python run_pipeline.py --claim CLM-100030    # full five-stage trace for one claim
 
@@ -49,7 +47,7 @@ A Streamlit UI for the review/adjudication stage:
 - A reviewer records a **disposition** (Confirm fraud / Not fraud) per claim, and the
   worklist of dispositions can be exported as JSON for the audit team.
 
-## The temporal GraphRAG showcase (your strongest demo moment)
+## The temporal GraphRAG example 
 
 Claim **CLM-100030** bills an MRI brain (70553) for headache (R51.9) on 2025-05-30.
 The graph retrieves the policy **in force on that date** — `POL-IMG-001`, which does
@@ -67,7 +65,7 @@ g.governing_policies("70553", date(2025, 3, 1))   # -> POL-IMG-001 (old)
 g.governing_policies("70553", date(2025, 9, 1))   # -> POL-IMG-002 (revised)
 ```
 
-## Datasets (synthetic stand-ins matching real open schemas)
+## Datasets 
 
 `data/generate_data.py` emits files whose columns match real open datasets, so you
 can drop a real download in by pointing an env var at it (see `data/schemas.py`,
@@ -89,10 +87,8 @@ export LEIE_CSV=/path/to/leie.csv
 Claims column aliases (e.g. `PotentialFraud` -> `Is_Fraud`) are normalized
 automatically; the LEIE join key `NPI` is identical in the real file.
 
-## Honest scoping (say this in your write-up)
 
-This POC implements the measurable, runnable core of each stage and documents the
-heavier research components as the production path:
+
 
 - **Step 1** uses an exact Beta-Bernoulli conjugate posterior (no approximation
   needed for Bernoulli outcomes) plus a facility-network term. The full *Variational*
