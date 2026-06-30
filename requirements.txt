@@ -1,0 +1,16 @@
+# --- core (the tested pipeline runs on these; all standard data-science libs) ---
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3       # TF-IDF vector retrieval, metrics
+scipy>=1.11
+networkx>=3.0           # GraphRAG claim/provider/policy graph + temporal edges
+
+# --- optional: agent-framework orchestration (Step-1 routing as a state graph) ---
+langgraph>=0.2          # python run_graph.py
+
+# --- optional: dense semantic retrieval instead of TF-IDF ---
+sentence-transformers>=2.2   # export RETRIEVER=dense
+faiss-cpu>=1.7
+
+# --- optional: human review console UI ---
+streamlit>=1.36          # streamlit run app.py

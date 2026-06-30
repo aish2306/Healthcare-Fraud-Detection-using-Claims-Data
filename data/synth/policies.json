@@ -1,0 +1,160 @@
+{
+  "policies": [
+    {
+      "policy_id": "POL-IMG-001",
+      "title": "Advanced brain imaging (MRI/CT)",
+      "procedure_codes": [
+        "70553"
+      ],
+      "covered_dx_prefixes": [
+        "G43",
+        "I63",
+        "S06",
+        "C71",
+        "G40"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2025-06-30",
+      "text": "Advanced brain imaging is covered for migraine with complications, stroke, intracranial injury, neoplasm, or seizure. Uncomplicated headache (R51) requires failed conservative care. Routine exams (Z00) do not support necessity. Superseded 2025-07-01."
+    },
+    {
+      "policy_id": "POL-IMG-002",
+      "title": "Advanced brain imaging (MRI/CT) - revised",
+      "procedure_codes": [
+        "70553"
+      ],
+      "covered_dx_prefixes": [
+        "G43",
+        "I63",
+        "S06",
+        "C71",
+        "G40",
+        "R51"
+      ],
+      "effective_date": "2025-07-01",
+      "end_date": "2026-12-31",
+      "text": "Revised policy effective 2025-07-01: advanced brain imaging covered for the listed neurologic diagnoses and for persistent headache (R51) after documented conservative management. Routine exams (Z00) remain non-covered."
+    },
+    {
+      "policy_id": "POL-EM-001",
+      "title": "E/M level selection",
+      "procedure_codes": [
+        "99213",
+        "99214",
+        "99215"
+      ],
+      "covered_dx_prefixes": [
+        "*"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "E/M level must match documented complexity. A level-5 visit (99215) requires high-complexity decision-making; routine or preventive encounters (Z00) do not support level 5 and indicate upcoding."
+    },
+    {
+      "policy_id": "POL-LAB-001",
+      "title": "Metabolic panel testing",
+      "procedure_codes": [
+        "80053",
+        "80048"
+      ],
+      "covered_dx_prefixes": [
+        "E11",
+        "E10",
+        "N18",
+        "*"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Comprehensive (80053) includes all components of basic (80048); both should not be billed together. Covered for metabolic, diabetic, and renal monitoring."
+    },
+    {
+      "policy_id": "POL-ORTH-001",
+      "title": "Total knee arthroplasty",
+      "procedure_codes": [
+        "27447"
+      ],
+      "covered_dx_prefixes": [
+        "M17"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Total knee arthroplasty (27447) is covered for osteoarthritis of the knee (M17) after documented failed conservative therapy. High-dollar; subject to prepay review."
+    },
+    {
+      "policy_id": "POL-INJ-001",
+      "title": "Major joint injection",
+      "procedure_codes": [
+        "20610"
+      ],
+      "covered_dx_prefixes": [
+        "M17",
+        "M54",
+        "M25"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Major joint injection (20610) covered for joint osteoarthritis or effusion with documented indication."
+    },
+    {
+      "policy_id": "POL-DERM-001",
+      "title": "Skin debridement",
+      "procedure_codes": [
+        "11042"
+      ],
+      "covered_dx_prefixes": [
+        "L03",
+        "L97",
+        "I83"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Debridement (11042) covered for documented cellulitis, ulcer, or wound requiring removal of devitalized tissue."
+    },
+    {
+      "policy_id": "POL-CARD-001",
+      "title": "Electrocardiogram",
+      "procedure_codes": [
+        "93000"
+      ],
+      "covered_dx_prefixes": [
+        "I10",
+        "I20",
+        "I48",
+        "R00"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "ECG (93000) covered for hypertension, arrhythmia, chest pain, or palpitations; repeated same-day ECGs require documentation."
+    },
+    {
+      "policy_id": "POL-PT-001",
+      "title": "Therapeutic exercise",
+      "procedure_codes": [
+        "97110"
+      ],
+      "covered_dx_prefixes": [
+        "M54",
+        "M25",
+        "S82"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Therapeutic exercise (97110) covered under an active plan of care for documented musculoskeletal impairment."
+    },
+    {
+      "policy_id": "POL-RESP-001",
+      "title": "Nebulizer / respiratory",
+      "procedure_codes": [
+        "94640"
+      ],
+      "covered_dx_prefixes": [
+        "J44",
+        "J45",
+        "J06"
+      ],
+      "effective_date": "2024-01-01",
+      "end_date": "2026-12-31",
+      "text": "Respiratory treatment covered for asthma, COPD, or acute respiratory infection with documented obstruction."
+    }
+  ]
+}
